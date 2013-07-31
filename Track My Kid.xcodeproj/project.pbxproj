@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6723DD6614C21948004C91A5 /* PersistentApplicationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6723DD6514C21948004C91A5 /* PersistentApplicationData.m */; };
+		672BA3BD14C5120900777F2F /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 672BA3BC14C5120900777F2F /* Utility.m */; };
+		672BA3C114C5125F00777F2F /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 672BA3C014C5125F00777F2F /* Constants.m */; };
+		676641AE14CB4F86005C0AE4 /* ListKidsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 676641AD14CB4F86005C0AE4 /* ListKidsViewController.m */; };
+		676641BA14CB58A7005C0AE4 /* AppDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 676641B714CB58A6005C0AE4 /* AppDataObject.m */; };
+		676641BB14CB58A7005C0AE4 /* SingleAppDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 676641B914CB58A7005C0AE4 /* SingleAppDataObject.m */; };
+		6766464A14CB81560094FE64 /* SearchByTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6766464914CB81560094FE64 /* SearchByTimeViewController.m */; };
+		6784688E14B94B3300662303 /* DropBoxUnlinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6784688C14B94B3200662303 /* DropBoxUnlinkViewController.m */; };
+		6784688F14B94B3300662303 /* DropBoxUnlinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6784688D14B94B3300662303 /* DropBoxUnlinkViewController.xib */; };
+		6784689514BC8AD800662303 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6784689414BC8AD800662303 /* CoreLocation.framework */; };
+		67AD590314D46909002A2B28 /* ListLocationByTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AD590214D46909002A2B28 /* ListLocationByTimeViewController.m */; };
+		67AD590714D49826002A2B28 /* LocationDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AD590614D49826002A2B28 /* LocationDataObject.m */; };
+		67AD590A14D49D5F002A2B28 /* DDFileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AD590914D49D5F002A2B28 /* DDFileReader.m */; };
+		67B2509A14B8B527006363B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B2509914B8B527006363B1 /* UIKit.framework */; };
+		67B2509C14B8B527006363B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B2509B14B8B527006363B1 /* Foundation.framework */; };
+		67B2509E14B8B527006363B1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B2509D14B8B527006363B1 /* CoreGraphics.framework */; };
+		67B250A414B8B527006363B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67B250A214B8B527006363B1 /* InfoPlist.strings */; };
+		67B250A614B8B527006363B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B250A514B8B527006363B1 /* main.m */; };
+		67B250AA14B8B527006363B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B250A914B8B527006363B1 /* AppDelegate.m */; };
+		67B250B214B8B527006363B1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B250B114B8B527006363B1 /* SenTestingKit.framework */; };
+		67B250B314B8B527006363B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B2509914B8B527006363B1 /* UIKit.framework */; };
+		67B250B414B8B527006363B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B2509B14B8B527006363B1 /* Foundation.framework */; };
+		67B250BC14B8B527006363B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67B250BA14B8B527006363B1 /* InfoPlist.strings */; };
+		67B250BF14B8B527006363B1 /* Track_My_KidTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B250BE14B8B527006363B1 /* Track_My_KidTests.m */; };
+		67B250CC14B8B6A9006363B1 /* FirstTimeWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B250CA14B8B6A9006363B1 /* FirstTimeWelcomeViewController.m */; };
+		67B250CD14B8B6A9006363B1 /* FirstTimeWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67B250CB14B8B6A9006363B1 /* FirstTimeWelcomeViewController.xib */; };
+		67B250D314B8BC52006363B1 /* KidHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B250D114B8BC52006363B1 /* KidHomeViewController.m */; };
+		67B250D414B8BC52006363B1 /* KidHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67B250D214B8BC52006363B1 /* KidHomeViewController.xib */; };
+		67B250D814B8BCB5006363B1 /* ParentHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B250D614B8BCB5006363B1 /* ParentHomeViewController.m */; };
+		67B250D914B8BCB5006363B1 /* ParentHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67B250D714B8BCB5006363B1 /* ParentHomeViewController.xib */; };
+		67B250E114B8C696006363B1 /* DropBoxLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B250DF14B8C696006363B1 /* DropBoxLinkViewController.m */; };
+		67B250E214B8C696006363B1 /* DropBoxLinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67B250E014B8C696006363B1 /* DropBoxLinkViewController.xib */; };
+		67B250E814B8D744006363B1 /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B250E714B8D744006363B1 /* DropboxSDK.framework */; };
+		67B250EA14B8D899006363B1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B250E914B8D899006363B1 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		67B250B514B8B527006363B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67B2508C14B8B526006363B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67B2509414B8B527006363B1;
+			remoteInfo = "Track My Kid";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6723DD6414C21948004C91A5 /* PersistentApplicationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistentApplicationData.h; sourceTree = "<group>"; };
+		6723DD6514C21948004C91A5 /* PersistentApplicationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistentApplicationData.m; sourceTree = "<group>"; };
+		672BA3BB14C5120900777F2F /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		672BA3BC14C5120900777F2F /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		672BA3BF14C5125F00777F2F /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		672BA3C014C5125F00777F2F /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		676641AC14CB4F86005C0AE4 /* ListKidsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListKidsViewController.h; sourceTree = "<group>"; };
+		676641AD14CB4F86005C0AE4 /* ListKidsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListKidsViewController.m; sourceTree = "<group>"; };
+		676641B514CB58A6005C0AE4 /* AppDataObjectProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDataObjectProtocol.h; sourceTree = "<group>"; };
+		676641B614CB58A6005C0AE4 /* AppDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDataObject.h; sourceTree = "<group>"; };
+		676641B714CB58A6005C0AE4 /* AppDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDataObject.m; sourceTree = "<group>"; };
+		676641B814CB58A7005C0AE4 /* SingleAppDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleAppDataObject.h; sourceTree = "<group>"; };
+		676641B914CB58A7005C0AE4 /* SingleAppDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleAppDataObject.m; sourceTree = "<group>"; };
+		6766464814CB81560094FE64 /* SearchByTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchByTimeViewController.h; sourceTree = "<group>"; };
+		6766464914CB81560094FE64 /* SearchByTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchByTimeViewController.m; sourceTree = "<group>"; };
+		6784688B14B94B3200662303 /* DropBoxUnlinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropBoxUnlinkViewController.h; sourceTree = "<group>"; };
+		6784688C14B94B3200662303 /* DropBoxUnlinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropBoxUnlinkViewController.m; sourceTree = "<group>"; };
+		6784688D14B94B3300662303 /* DropBoxUnlinkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropBoxUnlinkViewController.xib; sourceTree = "<group>"; };
+		6784689414BC8AD800662303 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		67AD590114D46909002A2B28 /* ListLocationByTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListLocationByTimeViewController.h; sourceTree = "<group>"; };
+		67AD590214D46909002A2B28 /* ListLocationByTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListLocationByTimeViewController.m; sourceTree = "<group>"; };
+		67AD590514D49826002A2B28 /* LocationDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDataObject.h; sourceTree = "<group>"; };
+		67AD590614D49826002A2B28 /* LocationDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDataObject.m; sourceTree = "<group>"; };
+		67AD590814D49D5F002A2B28 /* DDFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileReader.h; sourceTree = "<group>"; };
+		67AD590914D49D5F002A2B28 /* DDFileReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileReader.m; sourceTree = "<group>"; };
+		67B2509514B8B527006363B1 /* Track My Kid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Track My Kid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B2509914B8B527006363B1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		67B2509B14B8B527006363B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		67B2509D14B8B527006363B1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		67B250A114B8B527006363B1 /* Track My Kid-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Track My Kid-Info.plist"; sourceTree = "<group>"; };
+		67B250A314B8B527006363B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		67B250A514B8B527006363B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		67B250A714B8B527006363B1 /* Track My Kid-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Track My Kid-Prefix.pch"; sourceTree = "<group>"; };
+		67B250A814B8B527006363B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		67B250A914B8B527006363B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		67B250B014B8B527006363B1 /* Track My KidTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Track My KidTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B250B114B8B527006363B1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		67B250B914B8B527006363B1 /* Track My KidTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Track My KidTests-Info.plist"; sourceTree = "<group>"; };
+		67B250BB14B8B527006363B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		67B250BD14B8B527006363B1 /* Track_My_KidTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Track_My_KidTests.h; sourceTree = "<group>"; };
+		67B250BE14B8B527006363B1 /* Track_My_KidTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Track_My_KidTests.m; sourceTree = "<group>"; };
+		67B250C814B8B57E006363B1 /* Track My Kid.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Track My Kid.entitlements"; sourceTree = "<group>"; };
+		67B250C914B8B6A9006363B1 /* FirstTimeWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTimeWelcomeViewController.h; sourceTree = "<group>"; };
+		67B250CA14B8B6A9006363B1 /* FirstTimeWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTimeWelcomeViewController.m; sourceTree = "<group>"; };
+		67B250CB14B8B6A9006363B1 /* FirstTimeWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstTimeWelcomeViewController.xib; sourceTree = "<group>"; };
+		67B250D014B8BC52006363B1 /* KidHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KidHomeViewController.h; sourceTree = "<group>"; };
+		67B250D114B8BC52006363B1 /* KidHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KidHomeViewController.m; sourceTree = "<group>"; };
+		67B250D214B8BC52006363B1 /* KidHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KidHomeViewController.xib; sourceTree = "<group>"; };
+		67B250D514B8BCB5006363B1 /* ParentHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentHomeViewController.h; sourceTree = "<group>"; };
+		67B250D614B8BCB5006363B1 /* ParentHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentHomeViewController.m; sourceTree = "<group>"; };
+		67B250D714B8BCB5006363B1 /* ParentHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParentHomeViewController.xib; sourceTree = "<group>"; };
+		67B250DE14B8C696006363B1 /* DropBoxLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropBoxLinkViewController.h; sourceTree = "<group>"; };
+		67B250DF14B8C696006363B1 /* DropBoxLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropBoxLinkViewController.m; sourceTree = "<group>"; };
+		67B250E014B8C696006363B1 /* DropBoxLinkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropBoxLinkViewController.xib; sourceTree = "<group>"; };
+		67B250E714B8D744006363B1 /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
+		67B250E914B8D899006363B1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67B2509214B8B527006363B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B2509A14B8B527006363B1 /* UIKit.framework in Frameworks */,
+				67B2509C14B8B527006363B1 /* Foundation.framework in Frameworks */,
+				67B2509E14B8B527006363B1 /* CoreGraphics.framework in Frameworks */,
+				67B250E814B8D744006363B1 /* DropboxSDK.framework in Frameworks */,
+				67B250EA14B8D899006363B1 /* Security.framework in Frameworks */,
+				6784689514BC8AD800662303 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B250AC14B8B527006363B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B250B214B8B527006363B1 /* SenTestingKit.framework in Frameworks */,
+				67B250B314B8B527006363B1 /* UIKit.framework in Frameworks */,
+				67B250B414B8B527006363B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		676641B014CB4FA8005C0AE4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6766464E14D06CE30094FE64 /* common */,
+				6766464D14D06CD90094FE64 /* kids */,
+				6766464C14D06CC70094FE64 /* parents */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		6766464C14D06CC70094FE64 /* parents */ = {
+			isa = PBXGroup;
+			children = (
+				676641AC14CB4F86005C0AE4 /* ListKidsViewController.h */,
+				676641AD14CB4F86005C0AE4 /* ListKidsViewController.m */,
+				67AD590114D46909002A2B28 /* ListLocationByTimeViewController.h */,
+				67AD590214D46909002A2B28 /* ListLocationByTimeViewController.m */,
+				67B250D514B8BCB5006363B1 /* ParentHomeViewController.h */,
+				67B250D614B8BCB5006363B1 /* ParentHomeViewController.m */,
+				6766464814CB81560094FE64 /* SearchByTimeViewController.h */,
+				6766464914CB81560094FE64 /* SearchByTimeViewController.m */,
+			);
+			name = parents;
+			sourceTree = "<group>";
+		};
+		6766464D14D06CD90094FE64 /* kids */ = {
+			isa = PBXGroup;
+			children = (
+				67B250D014B8BC52006363B1 /* KidHomeViewController.h */,
+				67B250D114B8BC52006363B1 /* KidHomeViewController.m */,
+			);
+			name = kids;
+			sourceTree = "<group>";
+		};
+		6766464E14D06CE30094FE64 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				67B250DE14B8C696006363B1 /* DropBoxLinkViewController.h */,
+				67B250DF14B8C696006363B1 /* DropBoxLinkViewController.m */,
+				6784688B14B94B3200662303 /* DropBoxUnlinkViewController.h */,
+				6784688C14B94B3200662303 /* DropBoxUnlinkViewController.m */,
+				67B250C914B8B6A9006363B1 /* FirstTimeWelcomeViewController.h */,
+				67B250CA14B8B6A9006363B1 /* FirstTimeWelcomeViewController.m */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		67B2508A14B8B526006363B1 = {
+			isa = PBXGroup;
+			children = (
+				67B2509F14B8B527006363B1 /* Track My Kid */,
+				67B250B714B8B527006363B1 /* Track My KidTests */,
+				67B2509814B8B527006363B1 /* Frameworks */,
+				67B2509614B8B527006363B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		67B2509614B8B527006363B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67B2509514B8B527006363B1 /* Track My Kid.app */,
+				67B250B014B8B527006363B1 /* Track My KidTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67B2509814B8B527006363B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6784689414BC8AD800662303 /* CoreLocation.framework */,
+				67B250E914B8D899006363B1 /* Security.framework */,
+				67B250E714B8D744006363B1 /* DropboxSDK.framework */,
+				67B2509914B8B527006363B1 /* UIKit.framework */,
+				67B2509B14B8B527006363B1 /* Foundation.framework */,
+				67B2509D14B8B527006363B1 /* CoreGraphics.framework */,
+				67B250B114B8B527006363B1 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67B2509F14B8B527006363B1 /* Track My Kid */ = {
+			isa = PBXGroup;
+			children = (
+				67B250CF14B8B749006363B1 /* Classes */,
+				67B250CE14B8B731006363B1 /* Resources */,
+				67B250A014B8B527006363B1 /* Supporting Files */,
+			);
+			path = "Track My Kid";
+			sourceTree = "<group>";
+		};
+		67B250A014B8B527006363B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				67B250A114B8B527006363B1 /* Track My Kid-Info.plist */,
+				67B250A214B8B527006363B1 /* InfoPlist.strings */,
+				67B250A514B8B527006363B1 /* main.m */,
+				67B250A714B8B527006363B1 /* Track My Kid-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		67B250B714B8B527006363B1 /* Track My KidTests */ = {
+			isa = PBXGroup;
+			children = (
+				67B250BD14B8B527006363B1 /* Track_My_KidTests.h */,
+				67B250BE14B8B527006363B1 /* Track_My_KidTests.m */,
+				67B250B814B8B527006363B1 /* Supporting Files */,
+			);
+			path = "Track My KidTests";
+			sourceTree = "<group>";
+		};
+		67B250B814B8B527006363B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				67B250B914B8B527006363B1 /* Track My KidTests-Info.plist */,
+				67B250BA14B8B527006363B1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		67B250CE14B8B731006363B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				67B250C814B8B57E006363B1 /* Track My Kid.entitlements */,
+				67B250CB14B8B6A9006363B1 /* FirstTimeWelcomeViewController.xib */,
+				67B250E014B8C696006363B1 /* DropBoxLinkViewController.xib */,
+				6784688D14B94B3300662303 /* DropBoxUnlinkViewController.xib */,
+				67B250D214B8BC52006363B1 /* KidHomeViewController.xib */,
+				67B250D714B8BCB5006363B1 /* ParentHomeViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		67B250CF14B8B749006363B1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				676641B614CB58A6005C0AE4 /* AppDataObject.h */,
+				676641B714CB58A6005C0AE4 /* AppDataObject.m */,
+				676641B514CB58A6005C0AE4 /* AppDataObjectProtocol.h */,
+				67B250A814B8B527006363B1 /* AppDelegate.h */,
+				67B250A914B8B527006363B1 /* AppDelegate.m */,
+				672BA3BF14C5125F00777F2F /* Constants.h */,
+				672BA3C014C5125F00777F2F /* Constants.m */,
+				67AD590814D49D5F002A2B28 /* DDFileReader.h */,
+				67AD590914D49D5F002A2B28 /* DDFileReader.m */,
+				67AD590514D49826002A2B28 /* LocationDataObject.h */,
+				67AD590614D49826002A2B28 /* LocationDataObject.m */,
+				6723DD6414C21948004C91A5 /* PersistentApplicationData.h */,
+				6723DD6514C21948004C91A5 /* PersistentApplicationData.m */,
+				676641B814CB58A7005C0AE4 /* SingleAppDataObject.h */,
+				676641B914CB58A7005C0AE4 /* SingleAppDataObject.m */,
+				672BA3BB14C5120900777F2F /* Utility.h */,
+				672BA3BC14C5120900777F2F /* Utility.m */,
+				676641B014CB4FA8005C0AE4 /* View Controllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67B2509414B8B527006363B1 /* Track My Kid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67B250C214B8B527006363B1 /* Build configuration list for PBXNativeTarget "Track My Kid" */;
+			buildPhases = (
+				67B2509114B8B527006363B1 /* Sources */,
+				67B2509214B8B527006363B1 /* Frameworks */,
+				67B2509314B8B527006363B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Track My Kid";
+			productName = "Track My Kid";
+			productReference = 67B2509514B8B527006363B1 /* Track My Kid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		67B250AF14B8B527006363B1 /* Track My KidTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67B250C514B8B527006363B1 /* Build configuration list for PBXNativeTarget "Track My KidTests" */;
+			buildPhases = (
+				67B250AB14B8B527006363B1 /* Sources */,
+				67B250AC14B8B527006363B1 /* Frameworks */,
+				67B250AD14B8B527006363B1 /* Resources */,
+				67B250AE14B8B527006363B1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67B250B614B8B527006363B1 /* PBXTargetDependency */,
+			);
+			name = "Track My KidTests";
+			productName = "Track My KidTests";
+			productReference = 67B250B014B8B527006363B1 /* Track My KidTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67B2508C14B8B526006363B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 67B2508F14B8B526006363B1 /* Build configuration list for PBXProject "Track My Kid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 67B2508A14B8B526006363B1;
+			productRefGroup = 67B2509614B8B527006363B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67B2509414B8B527006363B1 /* Track My Kid */,
+				67B250AF14B8B527006363B1 /* Track My KidTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67B2509314B8B527006363B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B250A414B8B527006363B1 /* InfoPlist.strings in Resources */,
+				67B250CD14B8B6A9006363B1 /* FirstTimeWelcomeViewController.xib in Resources */,
+				67B250D414B8BC52006363B1 /* KidHomeViewController.xib in Resources */,
+				67B250D914B8BCB5006363B1 /* ParentHomeViewController.xib in Resources */,
+				67B250E214B8C696006363B1 /* DropBoxLinkViewController.xib in Resources */,
+				6784688F14B94B3300662303 /* DropBoxUnlinkViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B250AD14B8B527006363B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B250BC14B8B527006363B1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67B250AE14B8B527006363B1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67B2509114B8B527006363B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B250A614B8B527006363B1 /* main.m in Sources */,
+				67B250AA14B8B527006363B1 /* AppDelegate.m in Sources */,
+				67B250CC14B8B6A9006363B1 /* FirstTimeWelcomeViewController.m in Sources */,
+				67B250D314B8BC52006363B1 /* KidHomeViewController.m in Sources */,
+				67B250D814B8BCB5006363B1 /* ParentHomeViewController.m in Sources */,
+				67B250E114B8C696006363B1 /* DropBoxLinkViewController.m in Sources */,
+				6784688E14B94B3300662303 /* DropBoxUnlinkViewController.m in Sources */,
+				6723DD6614C21948004C91A5 /* PersistentApplicationData.m in Sources */,
+				672BA3BD14C5120900777F2F /* Utility.m in Sources */,
+				672BA3C114C5125F00777F2F /* Constants.m in Sources */,
+				676641AE14CB4F86005C0AE4 /* ListKidsViewController.m in Sources */,
+				676641BA14CB58A7005C0AE4 /* AppDataObject.m in Sources */,
+				676641BB14CB58A7005C0AE4 /* SingleAppDataObject.m in Sources */,
+				6766464A14CB81560094FE64 /* SearchByTimeViewController.m in Sources */,
+				67AD590314D46909002A2B28 /* ListLocationByTimeViewController.m in Sources */,
+				67AD590714D49826002A2B28 /* LocationDataObject.m in Sources */,
+				67AD590A14D49D5F002A2B28 /* DDFileReader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B250AB14B8B527006363B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B250BF14B8B527006363B1 /* Track_My_KidTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67B250B614B8B527006363B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67B2509414B8B527006363B1 /* Track My Kid */;
+			targetProxy = 67B250B514B8B527006363B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		67B250A214B8B527006363B1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67B250A314B8B527006363B1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		67B250BA14B8B527006363B1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67B250BB14B8B527006363B1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		67B250C014B8B527006363B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67B250C114B8B527006363B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67B250C314B8B527006363B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Track My Kid/Track My Kid-Prefix.pch";
+				INFOPLIST_FILE = "Track My Kid/Track My Kid-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		67B250C414B8B527006363B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Track My Kid/Track My Kid-Prefix.pch";
+				INFOPLIST_FILE = "Track My Kid/Track My Kid-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		67B250C614B8B527006363B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Track My Kid.app/Track My Kid";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Track My Kid/Track My Kid-Prefix.pch";
+				INFOPLIST_FILE = "Track My KidTests/Track My KidTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		67B250C714B8B527006363B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Track My Kid.app/Track My Kid";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Track My Kid/Track My Kid-Prefix.pch";
+				INFOPLIST_FILE = "Track My KidTests/Track My KidTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67B2508F14B8B526006363B1 /* Build configuration list for PBXProject "Track My Kid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67B250C014B8B527006363B1 /* Debug */,
+				67B250C114B8B527006363B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67B250C214B8B527006363B1 /* Build configuration list for PBXNativeTarget "Track My Kid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67B250C314B8B527006363B1 /* Debug */,
+				67B250C414B8B527006363B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67B250C514B8B527006363B1 /* Build configuration list for PBXNativeTarget "Track My KidTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67B250C614B8B527006363B1 /* Debug */,
+				67B250C714B8B527006363B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 67B2508C14B8B526006363B1 /* Project object */;
+}

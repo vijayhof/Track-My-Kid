@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <DropboxSDK/DropboxSDK.h>
 
 @interface DropBoxLinkViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+@property (strong, nonatomic) IBOutlet UITextField *nameTextField;
 
 - (IBAction)nameTextFieldDoneEditing:(id)sender; 
 - (IBAction)didPressDropBoxLink:(id)sender;

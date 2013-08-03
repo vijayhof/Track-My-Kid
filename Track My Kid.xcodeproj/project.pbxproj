@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6705590017ACD8A0003C1DDB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 670558FF17ACD8A0003C1DDB /* Default-568h@2x.png */; };
+		6705590217AD8649003C1DDB /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6705590117AD8649003C1DDB /* DropboxSDK.framework */; };
+		6705590417AD86DE003C1DDB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6705590317AD86DE003C1DDB /* QuartzCore.framework */; };
 		6723DD6614C21948004C91A5 /* PersistentApplicationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6723DD6514C21948004C91A5 /* PersistentApplicationData.m */; };
 		672BA3BD14C5120900777F2F /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 672BA3BC14C5120900777F2F /* Utility.m */; };
 		672BA3C114C5125F00777F2F /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 672BA3C014C5125F00777F2F /* Constants.m */; };
@@ -40,7 +42,6 @@
 		67B250D914B8BCB5006363B1 /* ParentHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67B250D714B8BCB5006363B1 /* ParentHomeViewController.xib */; };
 		67B250E114B8C696006363B1 /* DropBoxLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B250DF14B8C696006363B1 /* DropBoxLinkViewController.m */; };
 		67B250E214B8C696006363B1 /* DropBoxLinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67B250E014B8C696006363B1 /* DropBoxLinkViewController.xib */; };
-		67B250E814B8D744006363B1 /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B250E714B8D744006363B1 /* DropboxSDK.framework */; };
 		67B250EA14B8D899006363B1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B250E914B8D899006363B1 /* Security.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,8 @@
 
 /* Begin PBXFileReference section */
 		670558FF17ACD8A0003C1DDB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6705590117AD8649003C1DDB /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
+		6705590317AD86DE003C1DDB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6723DD6414C21948004C91A5 /* PersistentApplicationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistentApplicationData.h; sourceTree = "<group>"; };
 		6723DD6514C21948004C91A5 /* PersistentApplicationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistentApplicationData.m; sourceTree = "<group>"; };
 		672BA3BB14C5120900777F2F /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
@@ -110,7 +113,6 @@
 		67B250DE14B8C696006363B1 /* DropBoxLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropBoxLinkViewController.h; sourceTree = "<group>"; };
 		67B250DF14B8C696006363B1 /* DropBoxLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropBoxLinkViewController.m; sourceTree = "<group>"; };
 		67B250E014B8C696006363B1 /* DropBoxLinkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropBoxLinkViewController.xib; sourceTree = "<group>"; };
-		67B250E714B8D744006363B1 /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
 		67B250E914B8D899006363B1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -119,12 +121,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6705590417AD86DE003C1DDB /* QuartzCore.framework in Frameworks */,
 				67B2509A14B8B527006363B1 /* UIKit.framework in Frameworks */,
 				67B2509C14B8B527006363B1 /* Foundation.framework in Frameworks */,
 				67B2509E14B8B527006363B1 /* CoreGraphics.framework in Frameworks */,
-				67B250E814B8D744006363B1 /* DropboxSDK.framework in Frameworks */,
 				67B250EA14B8D899006363B1 /* Security.framework in Frameworks */,
 				6784689514BC8AD800662303 /* CoreLocation.framework in Frameworks */,
+				6705590217AD8649003C1DDB /* DropboxSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +194,7 @@
 		67B2508A14B8B526006363B1 = {
 			isa = PBXGroup;
 			children = (
+				6705590317AD86DE003C1DDB /* QuartzCore.framework */,
 				670558FF17ACD8A0003C1DDB /* Default-568h@2x.png */,
 				67B2509F14B8B527006363B1 /* Track My Kid */,
 				67B250B714B8B527006363B1 /* Track My KidTests */,
@@ -211,9 +215,9 @@
 		67B2509814B8B527006363B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6705590117AD8649003C1DDB /* DropboxSDK.framework */,
 				6784689414BC8AD800662303 /* CoreLocation.framework */,
 				67B250E914B8D899006363B1 /* Security.framework */,
-				67B250E714B8D744006363B1 /* DropboxSDK.framework */,
 				67B2509914B8B527006363B1 /* UIKit.framework */,
 				67B2509B14B8B527006363B1 /* Foundation.framework */,
 				67B2509D14B8B527006363B1 /* CoreGraphics.framework */,
@@ -529,6 +533,7 @@
 		67B250C314B8B527006363B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -544,6 +549,7 @@
 		67B250C414B8B527006363B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -560,6 +566,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Track My Kid.app/Track My Kid";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
@@ -577,6 +584,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Track My Kid.app/Track My Kid";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",

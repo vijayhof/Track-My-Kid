@@ -10,17 +10,16 @@
 #import "DBQuota.h"
 
 @interface DBAccountInfo : NSObject <NSCoding> {
-    NSString* email;
     NSString* country;
     NSString* displayName;
     DBQuota* quota;
     NSString* userId;
     NSString* referralLink;
+    NSDictionary* original;
 }
 
 - (id)initWithDictionary:(NSDictionary*)dict;
 
-@property (nonatomic, readonly) NSString* email;
 @property (nonatomic, readonly) NSString* country;
 @property (nonatomic, readonly) NSString* displayName;
 @property (nonatomic, readonly) DBQuota* quota;

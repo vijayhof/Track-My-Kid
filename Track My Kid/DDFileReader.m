@@ -69,7 +69,6 @@
     [fileHandle closeFile];
     fileHandle = nil;
     filePath = nil;
-    lineDelimiter = nil;
     currentOffset = 0ULL;
 }
 

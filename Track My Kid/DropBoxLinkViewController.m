@@ -6,6 +6,8 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
+#import <DropboxSDK/DropboxSDK.h>
+
 #import "DropBoxLinkViewController.h"
 #import "KidHomeViewController.h"
 #import "ParentHomeViewController.h"
@@ -99,7 +101,7 @@
     {
         // If here, then DropBox is not linked
         NSLog(@"In dP2: Not linked. Trying to link...");
-        [[DBSession sharedSession] link];
+        [[DBSession sharedSession] linkFromController:self];
         NSLog(@"In dP3: Seems to have linked.");
         
         // If here, then DropBox is linked

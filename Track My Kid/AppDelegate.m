@@ -35,14 +35,14 @@
 	return [super init];
 }
 
-#pragma mark - 
+#pragma mark -
 #pragma mark Application lifecycle
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-
+    
     // Override point for customization after application launch.
-
+    
     /*
      * Initialize DropBox session
      */
@@ -59,58 +59,61 @@
 	
     BOOL isLinked = [[DBSession sharedSession] isLinked];
     
-    D2Log(@"here 5");
-
+    self.navController = [[UINavigationController alloc]init];
+    
     // If drop box is not linked, then show first time welcome page
     if(!isLinked)
     {
         D2Log(@"first time");
-        FirstTimeWelcomeViewController *first = [[FirstTimeWelcomeViewController alloc] init]; 
-        self.navController = [[UINavigationController alloc] initWithRootViewController:first]; 
+        FirstTimeWelcomeViewController *first = [[FirstTimeWelcomeViewController alloc] init];
+        //        self.navController = [[UINavigationController alloc] initWithRootViewController:first];
+        [self.navController pushViewController:first animated:YES];
     }
     else
     {
-        D2Log(@"here 6");
         persistentApplicationData = [Utility readFromArchive];
-        D2Log(@"here 7");
         if(persistentApplicationData == nil)
         {
             D2Log(@"cAD is null");
             persistentApplicationData = [[PersistentApplicationData alloc] init];
             
             // If no custom application data is found, then show first time welcome page
-            FirstTimeWelcomeViewController *first = [[FirstTimeWelcomeViewController alloc] init]; 
-            self.navController = [[UINavigationController alloc] initWithRootViewController:first];             
+            FirstTimeWelcomeViewController *first = [[FirstTimeWelcomeViewController alloc] init];
+            //            self.navController = [[UINavigationController alloc] initWithRootViewController:first];
+            [self.navController pushViewController:first animated:YES];
         }
         else
         {
             D2Log(@"cAD is not null");
             D2Log(@"cAD: %d %d %@", persistentApplicationData.version, persistentApplicationData.kidOrParent, persistentApplicationData.personName);
-
+            
             if (persistentApplicationData.kidOrParent == kKidKeyValue)
             {
                 // If custom application data has kid value, then show kid home page
-                KidHomeViewController *kidHome = [[KidHomeViewController alloc] init]; 
-                self.navController = [[UINavigationController alloc] initWithRootViewController:kidHome]; 
+                KidHomeViewController *kidHome = [[KidHomeViewController alloc] init];
+                //                self.navController = [[UINavigationController alloc] initWithRootViewController:kidHome];
+                [self.navController pushViewController:kidHome animated:YES];
             }
             else if (persistentApplicationData.kidOrParent == kParentKeyValue)
             {
                 // If custom application data has parent value, then show parent home page
-                ParentHomeViewController *parentHome = [[ParentHomeViewController alloc] init]; 
-                self.navController = [[UINavigationController alloc] initWithRootViewController:parentHome]; 
+                ParentHomeViewController *parentHome = [[ParentHomeViewController alloc] init];
+                //                self.navController = [[UINavigationController alloc] initWithRootViewController:parentHome];
+                [self.navController pushViewController:parentHome animated:YES];
             }
             else
             {
                 // If custom application data doesn't have valid value for kid or parent, then show first time welcome page
-                FirstTimeWelcomeViewController *first = [[FirstTimeWelcomeViewController alloc] init]; 
-                self.navController = [[UINavigationController alloc] initWithRootViewController:first];                             
+                FirstTimeWelcomeViewController *first = [[FirstTimeWelcomeViewController alloc] init];
+                //                self.navController = [[UINavigationController alloc] initWithRootViewController:first];
+                [self.navController pushViewController:first animated:YES];
             }
         }
     }
-
+    
     [self.window addSubview:navController.view];
-
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+    self.window.backgroundColor = [UIColor lightGrayColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -129,7 +132,7 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
     /*
-     Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+     Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
      If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
      */
 }
@@ -157,7 +160,7 @@
      */
 }
 
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url 
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
 	NSLog(@"In handleOpenURL");
     
@@ -175,17 +178,17 @@
 #pragma mark -
 #pragma mark DBSessionDelegate methods
 
-- (void)sessionDidReceiveAuthorizationFailure:(DBSession*)session userId:(NSString *)userId 
+- (void)sessionDidReceiveAuthorizationFailure:(DBSession*)session userId:(NSString *)userId
 {
 	NSLog(@"In sessionDidReceiveAuthorizationFailure!");
     
 	dropBoxUserId = userId;
     
-	UIAlertView *alertView = [[UIAlertView alloc] 
-                              initWithTitle:@"Dropbox Session Ended" 
-                              message:@"Do you want to relink?" 
-                              delegate:self 
-                              cancelButtonTitle:@"Cancel" 
+	UIAlertView *alertView = [[UIAlertView alloc]
+                              initWithTitle:@"Dropbox Session Ended"
+                              message:@"Do you want to relink?"
+                              delegate:self
+                              cancelButtonTitle:@"Cancel"
                               otherButtonTitles:@"Relink", nil];
     [alertView show];
 }
@@ -199,10 +202,10 @@
 	NSLog(@"In clickedButtonAtIndex!");
     
     //[self.navController popToViewController:<#(UIViewController *)#> animated:YES];
-
+    
 	if (index != alertView.cancelButtonIndex)
     {
-		[[DBSession sharedSession] linkUserId:dropBoxUserId];
+        // TODO		[[DBSession sharedSession] linkUserId:dropBoxUserId];
 	}
 }
 
